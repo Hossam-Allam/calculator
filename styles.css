@@ -6,6 +6,13 @@ body {
     background: linear-gradient(120deg, gainsboro, ghostwhite, whitesmoke, lightgray, oldlace) no-repeat center center;
 }
 
+@font-face {
+    font-family: 'DigitalDream';
+    src: url('fonts/DIGITALDREAM.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .calculator {
     display: flex;
     flex-direction: column;
@@ -28,6 +35,18 @@ body {
 .output {
     background-color: black;
     color: white;
+    padding: 0px 5px;
+    font-size: 20px;
+    font-family: 'DigitalDream', sans-serif;
+}
+
+p {
+    margin: 10px;
+}
+
+.result {
+    float: right;
+    color: green;
 }
 
 .input {
@@ -67,5 +86,30 @@ button:hover {
 
 .final-button {
     margin-left: 15px;
-    ;
+
+}
+
+.seperator {
+    border-left: 1px solid black;
+}
+
+.equal {
+    background-color: lightgreen;
+    font-size: large;
+}
+
+.AC {
+    background-color: brown;
+}
+
+.c {
+    background-color: rgb(122, 122, 94);
+}
+
+.plus,
+.minus,
+.multiply,
+.divide,
+.modulos {
+    background-color: beige;
 }
