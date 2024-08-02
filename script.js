@@ -103,6 +103,12 @@ function engine() {
                     symbol = operator.innerHTML;
                     console.log(symbol);
                     given.innerHTML += operator.innerHTML;
+                } else if (symbol === "" && previousAnswer != "0" && given.innerHTML != "0") {
+                    num1 = given.innerHTML;
+                    operatorIndex = given.innerHTML.length;
+                    symbol = operator.innerHTML;
+                    console.log(symbol);
+                    given.innerHTML += operator.innerHTML;
                 } else
                     alert("bruh");
             } else
