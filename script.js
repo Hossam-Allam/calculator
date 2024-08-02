@@ -89,7 +89,7 @@ function engine() {
 
     operations.forEach(operator => {
         operator.addEventListener("click", () => {
-            if (given.innerHTML < 14) {
+            if (given.innerHTML.length < 14) {
                 if (symbol === "" && previousAnswer == "0") {
                     num1 = given.innerHTML;
                     operatorIndex = given.innerHTML.length;
